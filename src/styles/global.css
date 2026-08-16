@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, #root {
+    margin:0;
+    padding:0;
+    min-height:100%;
+}
+
+:root {
+  --color-primary: #2f7d6b;
+  --color-primary-dark: #235f52;
+  --color-accent: #f0a830;
+  --color-accent-dark: #d99420;
+  --color-text: #1e2b3a;
+  --color-muted: #64748b;
+  --color-bg: #f7f8fa;
+  --color-border: #e2e8f0;
+  --page-bg: #EEF5F3;
+
+}
+
+body 
+{
+  font-family: "Poppins", sans-serif;
+  background: #EEF5F3;
+  color: #20313b;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.navbar {
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 80px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: #2f7d6b;
+  text-decoration: none; 
+}
+
+.logo:hover,
+.logo:visited,
+.logo:active {
+  text-decoration: none;
+  color: #2f7d6b;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #20313b;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2f7d6b;
+}
+
+.donate-btn {
+  background: #f4b942;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+.donate-btn:hover {
+  transform: translateY(-3px);
+}
+
+.footer{
+
+    background:#20313B;
+
+    color:white;
+
+    padding:60px 0 20px;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.footer-logo h2{
+
+    color:#F4B942;
+
+    margin-bottom:10px;
+
+}
+
+.footer-logo p{
+
+    color:#D6D6D6;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#F4B942;
+
+}
+
+.footer hr{
+
+    margin:35px 0 20px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#CFCFCF;
+
+    font-size:14px;
+
+}

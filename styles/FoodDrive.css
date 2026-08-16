@@ -1,0 +1,278 @@
+.food-hero{
+    padding:70px 0;
+    background:linear-gradient(135deg,#eef8f5,#f8fafc);
+}
+
+.food-hero-content{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.food-hero-text h1{
+    font-size:64px;
+    color:#20313B;
+    margin:18px 0;
+}
+
+.food-hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    color:#64748B;
+    margin-bottom:35px;
+}
+
+.food-hero-image{
+    text-align:center;
+}
+
+.food-hero-image img{
+    width:100%;
+    max-width:480px;
+}
+
+
+.food-about{
+    padding:90px 0;
+    background:#F7FBFA;
+}
+
+.food-about-content{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.food-about-image img{
+    width:100%;
+    max-width:380px;
+    display:block;
+    margin:auto;
+}
+
+.food-about-text h2{
+    font-size:42px;
+    color:#20313B;
+    margin-bottom:30px;
+}
+
+.food-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.food-list li{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:20px;
+    font-size:20px;
+    color:#20313B;
+    font-weight:500;
+}
+
+.food-list li span{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#DDF5EC;
+    color:#2F7D6B;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+}
+
+
+.ration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.ration-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.ration-card:hover {
+  transform: translateY(-8px);
+}
+
+.ration-card span {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.ration-card h3 {
+  color: #20313b;
+  font-size: 24px;
+}
+
+
+.food-impact {
+  background: #f8fafc;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 20px;
+  padding: 45px 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+
+}
+
+.impact-card h3 {
+  font-size: 52px;
+  color: #2f7d6b;
+  margin-bottom: 12px;
+}
+
+.impact-card p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.check {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dff5ec;
+  color: #2f7d6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto 18px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.timeline-item {
+  flex: 1;
+  min-width: 170px;
+  text-align: center;
+  position: relative;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 18px;
+  background: #2f7d6b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.timeline-item h3 {
+  color: #20313b;
+  font-size: 20px;
+}
+
+.food-cta {
+  padding: 90px 0;
+  background: #2f7d6b;
+  text-align: center;
+  color: white;
+}
+
+.food-cta h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.food-cta p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 35px;
+  color: #eef8f5;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+  .ration-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+    @media(max-width:900px){
+
+.food-hero-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.food-hero-text{
+    order:2;
+}
+
+.food-hero-image{
+    order:1;
+}
+
+.food-hero-text h1{
+    font-size:48px;
+}
+
+.food-hero-text p{
+    margin:auto;
+    margin-bottom:30px;
+}
+
+}
+
+  .food-about h2,
+  .food-impact h2,
+  .food-process h2,
+  .food-cta h2 {
+    font-size: 34px;
+  }
+
+  .ration-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+}
